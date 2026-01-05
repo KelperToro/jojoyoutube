@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Connecting...</title>
+    <style>
+        body {
+            background-color: #0b1e3b; /* Твой фирменный темно-синий */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Анимация загрузки */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-top: 5px solid #FFD700; /* Золотой цвет */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <div class="spinner"></div>
+    <div class="text">Loading...</div>
+
+    <script>
+
+        var targetUrl = "https://beacons.ai/wwclub"; 
+   
+
+
+        var delay = 250; 
+
+        setTimeout(function() {
+ 
+            window.location.replace(targetUrl);
+        }, delay);
+    </script>
+
+</body>
+</html>
